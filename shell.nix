@@ -14,39 +14,25 @@ pkgs.mkShell {
     pkgs.virtualenv
     (pkgs.python311.withPackages (ps: with ps; [
       beautifulsoup4
-      coverage
-      cython
       flake8
-      flax
-      guppy3
       ipython
       ipywidgets
       jupyterlab
-      mypy
       nltk
       numpy
-      numpy-stl
       openpyxl
       pandas
-      pillow
       pip
-      pytest
       pytorch-bin
       requests
       scikitlearn
       scipy
-      simplenote
       statsmodels
       sympy
       tensorflow
       tldextract
-      torchvision-bin
       tornado
       transformers
-      typer
-      types-pillow
-      types-requests
-      wheel
       xlsxwriter
     ]))
   ];
